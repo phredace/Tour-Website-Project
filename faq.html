@@ -1,0 +1,367 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="img/TM Bonvas Tours Logo.png" type="image/x-icon">
+
+    <!--Swipe CSS link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!--Fonts Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--Header Starts Here-->
+    <section class="header">
+        <div class="container">
+         <a href="index.html">
+             <img src="img/TM Bonvas Tours Logo.png" class="hello"> <link rel="stylesheet" href="index.html">
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About US</a>
+            <a href="packages.html">Packages</a>
+            <a href="book.html">Book</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <div id="menu-btn"class="fas fa-bars"></div>
+
+    </section>
+</body>
+
+<!-- Javascript Code Handling the Menu Btn -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.querySelector('#menu-btn');
+      const navbar = document.querySelector('.navbar');
+  
+      menuBtn.addEventListener('click', function () {
+        menuBtn.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+      });
+  
+      window.addEventListener('scroll', function () {
+        menuBtn.classList.remove('fa-times');
+        navbar.classList.remove('active');
+      });
+    });
+  </script>
+<!-- header section ends -->
+
+<div class="heading" style="background:url(img/lara.png) no-repeat">
+<h1>FAQ</h1>
+</div>
+
+    <section>
+    <div class="wrapperfaq">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+        <button class="accordion">
+            How do I book a tour with Bonvas Tours?
+            <i class="fa-solid fa-chevron-down"></i>
+       </button>
+       <div class="pannel">
+       <p> To book a tour with Bonvas Tours, please visit our website and fill out the online booking form. You will need to provide your contact information, the tour you would like to book, and the dates of your travel. Once you have submitted the form, one of our travel agents will contact you to confirm your booking.
+       </p>
+    </div>
+</div>
+     
+<div class="faq">
+    <button class="accordion">
+        What is your cancellation policy?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Our cancellation policy varies depending on the tour package and the time of cancellation. We offer a flexible cancellation policy. If you cancel your booking more than 45 days before the tour, you will receive a full refund. If you cancel between 16 and 30 days before the tour, you will receive a 60% refund. If you cancel less than 15 days before the tour, you will not receive a refund.
+   </p>
+</div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        How do I cancel my booking?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+    <p>You can cancel your booking by emailing <a href="mailto:info@bonvastours.com">info@bonvastours.com</a> or calling us at <a href="tel:+233261671686">+233 261 671 686</a>.</p>
+</div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        What if I have to cancel my booking for a reason beyond my control?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> We understand that sometimes things happen that are beyond our control. If you have to cancel your booking for a reason beyond your control, we may be able to offer you a partial refund. Please contact us to discuss your specific situation.
+   </p>
+</div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        Where can I find the cancellation policy?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> The cancellation policy is available on our website and in our terms and conditions. You can also find a copy of the cancellation policy by contacting us.
+   </p>
+</div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        Are flights included in the tour packages?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Flight inclusions vary for each tour package. Some packages may include flights, while others may only cover land arrangements. Please refer to the package details or contact our team for specific information regarding flights and inclusions.
+   </p>
+</div>
+</div>
+
+
+<div class="faq">
+    <button class="accordion">
+        Are travel visas and vaccinations included in the tour package?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Travel visas and vaccinations are generally not included in our tour packages. It is the responsibility of each traveler to ensure they have the necessary visas and vaccinations required for their destination. We recommend checking with the relevant embassy or consulate and consulting with your healthcare professional for up-to-date information. Our Team will be on standby to assist you through the process. 
+   </p>
+</div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        Can I customize a tour package to suit my preferences?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Yes, we offer the flexibility to customize tour packages to suit your preferences. Whether it's adjusting the itinerary, adding specific activities, or choosing accommodations, our team will work with you to create a personalized experience. Contact our customer service team to discuss your customization requests.
+   </p>
+  </div>
+</div>
+
+  <div class="faq">
+    <button class="accordion">
+        What is the group size for your tours?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> The group size varies depending on the tour package. Some tours may have a maximum group size, while others may be more intimate with smaller groups. Details regarding group size can be found in the tour package description. If you have specific requirements or preferences, please let us know, and we will assist you accordingly. However, we generally offer tours in three group sizes: small, medium, and large.
+    Small groups (4-15 people) are ideal for travelers who want a more intimate and personalized experience.
+    Medium groups (16-30 people) offer a good balance of intimacy and affordability.
+    Large groups (31+ people) are a good option for travelers who want to be part of a larger group and experience the camaraderie of traveling with a group of people.
+    
+   </p>
+  </div>
+</div>
+
+
+<div class="faq">
+    <button class="accordion">
+        Do you provide travel insurance?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> We highly recommend purchasing travel insurance to protect your investment and provide coverage for unforeseen circumstances. While we do not provide travel insurance directly, our team can assist you in finding suitable insurance options based on your needs. 
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        What payment methods do you accept?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p>We accept bank transfer & mobile money
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        Is transportation included within the tour package?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Transportation details are specified in each tour package. Depending on the itinerary, transportation may include private vehicles, shared transfers, or public transportation. Our packages are designed to ensure comfortable and convenient transportation throughout your journey.
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        Can you accommodate special dietary requirements?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> We strive to accommodate special dietary requirements whenever possible. Please inform us of any specific dietary restrictions or 
+    allergies during the booking process, and we will do our best to make suitable arrangements. However, please note that certain destinations or 
+    remote areas may have limited options for specific dietary needs. Bonvas Tours can accommodate a variety of special needs, including but not limited to: 
+    Mobility limitations: We can provide wheelchairs and other mobility aids, as well as accessible transportation. Hearing impairments: We can provide sign language 
+    interpreters and other accommodations for travelers with hearing impairments. Dietary restrictions: We can accommodate a variety of dietary restrictions, including allergies, 
+    intolerances, and religious restrictions.
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        How can I contact your customer service team for assistance?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Our customer service team is available to assist you 24/7. You can reach us by phone <a href="tel:+233261671686">+233 261 671 686,</a> or email <a href="mailto:info@bonvastours.com">info@bonvastours.com</a>, 
+    visit the <a href="contact.html"> Contact Us </a> page for the relevant contact information. We are here to answer your questions and provide the support you need.
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        What are the age restrictions for your tours?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> The age restrictions for our tours vary depending on the tour package. However, we generally recommend that travelers be at least 12 years old to participate in our tours. Some tours may have higher age restrictions, so please be sure to check the specific tour package description for more information
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        What are the safety and security measures that you take?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Bonvas Tours takes the safety and security of our travelers very seriously. We have a comprehensive safety and security program in place that includes:
+
+    Trained and experienced tour leaders
+    Regular safety checks of our vehicles and equipment
+    Strict adherence to all local safety regulations
+    A 24/7 emergency assistance service
+    
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+      How do I Inform Bonvas Tours of my special needs?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Please be sure to let us know about your special needs when you book your tour. We will work with you to create a personalized itinerary that meets your needs. 
+   </p>
+  </div>
+</div>
+
+
+
+<div class="faq">
+    <button class="accordion">
+        What types of tours does Bonvas Tours offer?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Bonvas Tours offers a variety of tours, including but not limited to:
+    Cultural tours,
+    Adventure tours,
+    Nature tours,
+    City tours,
+    Themed tours,
+    Customized tours, among many others. 
+    
+   </p>
+  </div>
+</div>
+
+<div class="faq">
+    <button class="accordion">
+        What other services does Bonvas Tours offer?
+        <i class="fa-solid fa-chevron-down"></i>
+   </button>
+   <div class="pannel">
+   <p> Bonvas Tours also offers a variety of other services, such as:
+    Ground handling,
+    Visa assistance,
+    Travel insurance,
+    Car Rental,
+    Swiftnano (Campus Transport Services),
+    Hotel Booking,
+    Flight Ticketing,
+    Camping Services,
+    IWaS Aboard (Internship, Word & Study Aboard Program) and
+    Travel & Tour Consultation
+   </p>
+  </div>
+</div>
+
+</body>
+</html>
+</body>
+
+</section>
+
+<!--Footer Section-->
+<section class="footer">
+  <div class="box-container">
+
+     <div class="box">
+        <h3>Quick Links</h3>
+        <a href="index.html"> <i class="fas fa-angle-right"></i>Home</a>
+        <a href="about.html"> <i class="fas fa-angle-right"></i>About US</a>
+        <a href="packages.html"> <i class="fas fa-angle-right"></i>Packages</a>
+        <a href="book.html"> <i class="fas fa-angle-right"></i>Book</a>
+        <a href="faq.html"> <i class="fas fa-angle-right"></i>FAQ</a>
+        <a href="contact.html"> <i class="fas fa-angle-right"></i>Contact Us</a>
+     </div>
+
+     <div class="box">
+        <h3>Contact info</h3>
+        <a href="tel:0261671686"><i class="fas fa-phone"></i> 026 1671 686</a>
+        <a href="tel:0543025194"><i class="fas fa-phone"></i> 054 3025 194</a>
+        <a href="mailto:bonvastours@gmail.com"><i class="fas fa-envelope"></i> bonvastours@gmail.com</a>
+     </div>
+
+     <div class="box">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/bonvastours" target="_blank"> <i class="fab fa-facebook-f"></i> Facebook </a>
+        <a href="https://twitter.com/BonvasTour?s=20&t=5Bt8BjcnlrqnUwuRVUlx3w" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+        <a href="https://www.instagram.com/bonvastours/" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="#"> <i class="fab fa-linkedin"></i>Linkedin </a>
+     </div>
+
+  </div>
+  <div class="credit">
+      <p>&copy; 2023 Bonvas Tours. All Rights Reserved.</p>
+  </div>
+</section>
+
+
+<!--Footer Section Ends-->
+    <!--Swiper JS Link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--Custom  JS File Link-->
+    <script src="js/script.js"></script>
+    <script src="js/faq.js"></script>
+    </head>
+  </body>
+ </html>
+
+

@@ -1,0 +1,39 @@
+.wrapperfaq{
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .wrapperfaq{
+    max-width: 75%;
+    margin: auto;
+  }
+ 
+  .wrapperfaq > p 
+  .wrapperfaq > h1{
+    margin: 1.5rem 0;
+    text-align: center;
+ 
+  }
+  .wrapperfaq > h1{
+    letter-spacing: 3px;
+ 
+  }
+ 
+  .accordion{
+    background-color: white;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+ 
+ 
+  }
+   

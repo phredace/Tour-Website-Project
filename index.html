@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="img/TM Bonvas Tours Logo.png" type="image/x-icon">
+    <!-- Swipe CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Owl Carousel CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+    <!-- Header Starts Here -->
+    <section class="header">
+      <div class="container">
+          <a href="index.html">
+              <img src="img/TM Bonvas Tours Logo.png" class="hello">
+          </a>
+      </div>
+      <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About US</a>
+          <a href="packages.html">Packages</a>
+          <a href="blog.html">Blog</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      integrity="NEW-INTEGRITY-VALUE" 
+      crossorigin="anonymous">
+
+   <title>Fade-in Gradient Slideshow</title>
+</head>
+<body>
+
+<!-- Javascript Code Handling the Menu Btn -->
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+     const menuBtn = document.querySelector('#menu-btn');
+     const navbar = document.querySelector('.navbar');
+ 
+     menuBtn.addEventListener('click', function () {
+       menuBtn.classList.toggle('fa-times');
+       navbar.classList.toggle('active');
+     });
+ 
+     window.addEventListener('scroll', function () {
+       menuBtn.classList.remove('fa-times');
+       navbar.classList.remove('active');
+     });
+   });
+ </script>
+
+<div class="slide">
+   <div class="social-icons">
+       <a href="https://www.facebook.com/bonvastours" target="_blank"><i class="fab fa-facebook fa-3x fa-inverse" aria-label="Facebook"></i></a>
+       <a href="https://twitter.com/BonvasTour?s=20" target="_blank"><i class="fa fa-twitter"></i>
+       <a href="https://instagram.com/bonvastours?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram fa-3x fa-inverse" aria-label="Instagram"></i></a>
+   </div>
+   <img src="img/Sun.webp" alt="Sun Image">
+</div>
+
+<div class="slide">
+   <div class="social-icons">
+       <a href="https://www.facebook.com/bonvastours" target="_blank"><i class="fab fa-facebook fa-3x fa-inverse" aria-label="Facebook"></i></a>
+       <a href="https://twitter.com/BonvasTour?s=20" target="_blank"><i class="fa fa-twitter"></i>
+       <a href="https://instagram.com/bonvastours?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram fa-3x fa-inverse" aria-label="Instagram"></i></a>
+   </div>
+   <img src="img/Adomi.webp" alt="Adomi Image">
+</div>
+<button id="discover-btn">Discover More</button>
+
+<script>
+   // Get all slides
+   var slides = document.querySelectorAll('.slide');
+   var currentSlideIndex = 0;
+
+   // Function to show the current slide
+   function showCurrentSlide() {
+       // Hide all slides
+       slides.forEach(function (slide) {
+           slide.style.display = 'none';
+       });
+       // Show the current slide
+       slides[currentSlideIndex].style.display = 'block';
+   }
+
+   // Function to advance to the next slide
+   function nextSlide() {
+       currentSlideIndex++;
+       if (currentSlideIndex >= slides.length) {
+           currentSlideIndex = 0;
+       }
+       showCurrentSlide();
+   }
+
+   // Automatically change slide every 5 seconds (5000 milliseconds)
+   setInterval(nextSlide, 5000);
+
+   // Show the initial slide
+   showCurrentSlide();
+</script>
+
+  <script>
+   document.getElementById("discover-btn").addEventListener("click", function() {
+       // Replace 'page_url' with the actual URL of the page you want to redirect to
+       window.location.href = 'packages.html';
+   });
+   </script>
+   
+  <section class="services">
+    <h1 class="heading-title">Our Services</h1>
+    <div class="box-container_services12">
+      <div class="box12">
+        <div class="box12-hover">
+          <div class="box12-overlay"></div>
+          <img class="hover12-image" src="img/Flight1.png" alt="Airline Image">
+          <div class="data-text12">Bonvas Tours assures you of value for money when it comes to airline/hotel reservations and booking. Bonvas Tours; the Joy of Tourism. Bonvas Tours Reservations: The Joy of Travel</div>
+
+        </div>
+        <div class="image-text12">Airline Reservation & Ticketing</div>
+      </div>
+ 
+      <div class="box12">
+        <div class="box12-hover">
+          <div class="box12-overlay"></div>
+          <img class="hover12-image" src="img/Rental1.png" alt="Airline Image">
+          <div class="data-text12">Rent a car for your city rounds and intercity travels, for your ceremonies and events</div>
+        </div>
+        <div class="image-text12">Car Rental</div>
+      </div>
+
+      <div class="box12">
+       <div class="box12-hover">
+         <div class="box12-overlay"></div>
+         <img class="hover12-image" src="img/Tour.png" alt="Airline Image">
+         <div class="data-text12">We provide well-trained tour guides for all type of travel to assist you to navigate the various destinations in Ghana</div>
+       </div>
+       <div class="image-text12">Tour Guiding</div>
+     </div>
+ 
+     <div class="box12">
+       <div class="box12-hover">
+         <div class="box12-overlay"></div>
+         <img class="hover12-image" src="img/IWAS1.png" alt="Airline Image">
+         <div class="data-text12">Internship, Work and Study Abroad is an opportunity for high achievers to educate and improve their career path</div>
+       </div>
+       <div class="image-text12">Internship, Work and Study Abroad </div>
+     </div>
+ 
+     <div class="box12">
+       <div class="box12-hover">
+         <div class="box12-overlay"></div>
+         <img class="hover12-image" src="img/Excursion.png" alt="Airline Image">
+         <div class="data-text12">Bonvas Tours assures you of value for money when it comes to airline/hotel reservations and booking</div>
+       </div>
+       <div class="image-text12">All Year-Round Excursions and Tours</div>
+     </div>
+ 
+     <div class="box12">
+       <div class="box12-hover">
+         <div class="box12-overlay"></div>
+         <img class="hover12-image" src="img/Ground.png" alt="Airline Image">
+         <div class="data-text12">Bonvas Tours assures you of value for money when it comes to airline/hotel reservations and booking</div>
+       </div>
+       <div class="image-text12">Ground Handling Services</div>
+     </div>
+ 
+     <div class="box12">
+       <div class="box12-hover">
+         <div class="box12-overlay"></div>
+         <img class="hover12-image" src="img/SwiftNano.jpg" alt="Airline Image">
+          <div class="data-text12">Bonvas Tours assures you of value for money when it comes to airline/hotel reservations and booking. &amp; ticketing</div>
+        </div>
+        <div class="image-text12">Swiftnano</div>
+      </div>
+    </div>
+  </section>
+ 
+ <script>
+ document.addEventListener('DOMContentLoaded', function() {
+   var boxes = document.getElementsByClassName('box12');
+   for (var i = 0; i < boxes.length; i++) {
+     boxes[i].addEventListener('contextmenu', function(e) {
+       e.preventDefault();
+     });
+   }
+ });
+
+ </script>
+<style>
+   .btn {
+     display: inline-block;
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+     text-decoration: none;
+   }
+   </style>
+ <!--services section ends-->
+ <section class="home-packages">
+    <h1 class="heading-title">OUR PACKAGES</h1>
+    <div class="box-container11">
+
+       <div class="box11">
+          <div class="image">
+             <img src="img/Zember.png" alt="">
+          </div>
+          <div class="content">
+             <h3>Zember Ghana</h3>
+             
+             <a href="packages.html" class="btn">Book Now</a>
+          </div>
+       </div>
+
+       <div class="box11">
+          <div class="image">
+             <img src="img/Festival.png" alt="">
+         
+          </div>
+          <div class="content11">
+             <h3>Royal Ade Festival Tour (RAFT)</h3>
+             <p></p>
+             <a href="packages.html" class="btn">Book Now</a>
+          </div>
+       </div>
+       <div class="box11">
+          <div class="image">
+             <img src="img/Panafest.png" alt="">
+          </div>
+
+          <div class="content11">
+             <h3>Pan African Festival (PANAFEST 2024) & Ade Panafest</h3>
+             <p></p>
+             <a href="packages.html" class="btn">Book Now</a>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ <section class="about">
+   <div class="image">
+      <img src="img/IMG_20230220_153953_842.webp" alt="">
+   </div>
+
+   <div class="content">
+      <h3>About Us</h3>
+     
+      <p>Bonvas Tours Limited is a technology-driven and sustainable tour operating company in 
+         Ghana-Africa, providing comprehensive services for groups, individuals, and institutions from 
+         and to the country (Ghana) and the sub-region (Africa). It was established in 2018 by private 
+         individuals with experience in hospitality and tourism to help promote Ghana’s tourism among 
+         locals, Diasporas and tourists.</p>
+      <div class="icons-container">
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <span>Top Destinations</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span>Affordable Price</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>24/7 Guide Service</span>
+         </div>
+      </div>
+      <a href="about.html" class="btn">Read More</a>
+   </div>
+</section>
+
+<section class="why-choose-us">
+   <div class="container">
+     <h2>Why Choose Us</h2>
+     <div class="row">
+       <div class="col-md-4">
+         <div class="feature-box">
+           <div class="icon-box">
+             
+           </div>
+           <h3>Value</h3>
+           <p>With our "Know How", in the hospitality and tourism industry and with our alliance with most of 
+            the companies in Ghana, we do not only offer competitive prices to our customer. We also pass on very competitive prices and a maximum opportunity for choices and flexibility. Giving You Value for your money and a best tourism experience </p>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="feature-box">
+           <div class="icon-box">
+             
+           </div>
+           <h3>Experience</h3>
+           <p>Our renowned reputation is built on
+            personalized, high-quality services rooted in
+            extensive research, a robust database, and
+            years of tourism expertise. Our dedicated
+            team conducts thorough inspections of
+            accommodations and tourist spots
+            ensuring security, first aid, and health
+            amenities are readily available </p>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="feature-box">
+           <div class="icon-box">
+            
+           </div>
+           <h3>Service</h3>
+           <p>Our tour experts are friendly and competent
+            when it comes to assisting both seasoned
+            travellers and those who are fresh to the
+            world of tourism. We take pleasure in
+            providing excellent customer service. A big
+            portion of our reservations come from old customers, and much of our new
+            business comes from referrals
+            </p>
+         </div>
+       </div>
+     </div>
+   </div>
+  <script>
+      const boxes = document.querySelectorAll('.feature-box');
+
+      const observer = new IntersectionObserver((entries) => {
+     entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-box');
+    } else {
+      entry.target.classList.remove('animate-box');
+    }
+    });
+     });
+    boxes.forEach((box) => {
+    observer.observe(box);
+      });
+   </script>
+</section>
+
+<!-- reviews section starts  
+<section class="testimonial-area">
+   <div class="container">
+      <div class="sec-title">
+         <h2>Reviews</h2>
+         <p>What Our Clients are Saying About Us</p>
+      </div>
+      <div class="testimonial-content owl-carousel">
+         <div class="single-testimonial">
+            <div class="testimonial-inner">
+               <p>Review Area</p>
+               <div class="client-info">
+                  <div class="client-pic">
+                     <a href="#">
+                        <img src="img/Laugh.webp">
+                     </a>
+                  </div>
+                  <div class="client-details">
+                     <h6>Yeboah</h6>
+                     <span>Designer, Microsoft</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="single-testimonial">
+            <div class="testimonial-inner">
+               <p>Review Area</p>
+               <div class="client-info">
+                  <div class="client-pic">
+                     <a href="#">
+                        <img src="img/Laugh.webp">
+                     </a>
+                  </div>
+                  <div class="client-details">
+                     <h6>Yeboah</h6>
+                     <span>Designer, Microsoft</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/review.js"></script>
+<script src="js/jscript.js"></script>
+</section>
+-->
+<!--Footer Section-->
+<section class="footer">
+   <div class="box-container">
+
+      <div class="box">
+         <h3>Quick Links</h3>
+         <a href="index.html"> <i class="fas fa-angle-right"></i>Home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i>About US</a>
+         <a href="packages.html"> <i class="fas fa-angle-right"></i>Packages</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i>Book</a>
+         <a href="faq.html"> <i class="fas fa-angle-right"></i>FAQ</a>
+         <a href="contact.html"> <i class="fas fa-angle-right"></i>Contact Us</a>
+      </div>
+
+      <div class="box">
+         <h3>Contact info</h3>
+         <a href="tel:0261671686"><i class="fas fa-phone"></i> 026 1671 686</a>
+         <a href="tel:0543025194"><i class="fas fa-phone"></i> 054 3025 194</a>
+         <a href="mailto:bonvastours@gmail.com"><i class="fas fa-envelope"></i> bonvastours@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <h3>Follow Us</h3>
+         <a href="https://www.facebook.com/bonvastours" target="_blank"> <i class="fab fa-facebook-f"></i> Facebook </a>
+         <a href="https://twitter.com/BonvasTour?s=20&t=5Bt8BjcnlrqnUwuRVUlx3w" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+         <a href="https://www.instagram.com/bonvastours/" target="_blank">
+           <i class="fab fa-instagram"></i> Instagram
+         </a>
+         <a href="#"> <i class="fab fa-linkedin"></i>Linkedin </a>
+      </div>
+
+   </div>
+   <div class="credit">
+       <p>&copy; 2023 Bonvas Tours. All Rights Reserved.</p>
+   </div>
+</section>
+
+   
+ 
+<!--Footer Section Ends-->
+  <!--Swiper JS Link-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!--Custom  JS File Link-->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!--Slideshow Javascript-->
+   <script src="js/slide.js"></script>
+   <script src="js/review.js"></script>
+  
+  <!--FadeIn-->
+   <script type="text/javascript">
+</script>
+
+</head>
+  </body>
+</html>
